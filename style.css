@@ -1,0 +1,107 @@
+/* layout when mobile */
+*{
+    box-sizing: border-box; 
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    width:100%; 
+    min-width:480px; 
+    padding:16px;margin:0 auto;
+    text-align: center;
+}
+.fullW{
+    width:100%;
+    border: 0.1px solid grey;
+}
+.halfW{
+    width:50%;
+    float:left;
+    border: 0.1px solid grey;padding-top:125px;  
+}
+#a{
+    background-color: red;
+    height:75px;
+    padding-top:32.5px;
+}
+#b{
+    background-color: orange;
+    height:150px;
+    padding-top:75px;
+}
+#c{
+    background-color: yellow;
+    height:125px;
+    padding-top:62.5px;
+}
+#d{
+    background-color: green;
+    height:125px;
+    padding-top:62.5px;
+}
+#e{
+    display:inline-block; 
+    background-color: blue;
+    height:250px;
+}
+#f{
+    display:inline-block; 
+    background-color: purple;
+    height:250px;
+}
+#g{
+    display:inline-block; 
+    background-color: pink;
+    height:250px;
+}
+#h{
+    display:inline-block; 
+    background-color: black;
+    height:250px;
+}
+#i{
+    clear:both; 
+    background-color: grey;
+    height:80px;padding-top:40px;
+}
+@media all and (min-width: 800px){
+    /* Stuff in here is layout when change */
+    body{
+        max-width:960px;
+    }
+    #a{
+        height:100px;
+        padding-top:50px;
+    }
+    #b{
+        height:600px;
+        float:left;
+        width:20.83%;
+        padding-top:300px;
+    }
+    #c{
+        height:200px;
+        width:39.58%;
+        float:left;
+        padding-top:100px;
+    }
+    #d{
+        height:200px;
+        width:39.58%;
+        float:left;
+        padding-top:100px;
+    }
+    .halfW{
+        height:250px;
+        width:19.79%;
+        float:left;
+        padding-top:125px;
+    }
+    #i{
+        height:150px;
+        width:79.16%;
+        display:inline-block;
+        padding-top:75px;
+    }
+}
